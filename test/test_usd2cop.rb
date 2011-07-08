@@ -24,11 +24,10 @@ describe "USD2COP" do
   end
 
   describe "Twitter integration" do
+    it "updates the twitter account with the value for the day" do
+      mock_twitter
+      post "/"
+      last_response.body.must_equal "Today's value is: $1834"
+    end
   end
 end
-
-
-#   def test_twitter_integration
-#   end
-# end
-

@@ -3,6 +3,7 @@ gem "rake"
 gem "sinatra"
 gem "rest-client"
 gem "pamela"
+gem "twitter"
 
 group :test do
   gem "rack-test"
