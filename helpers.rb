@@ -8,7 +8,7 @@ module Helpers
   end
 
   def url
-    api_key = "AH9UY9-59VLGJX88E"
+    api_key = ENV["WA_TOKEN"]
     query = "1usd%20to%20cop"
     "http://api.wolframalpha.com/v2/query?input=#{query}&appid=#{api_key}"
   end
