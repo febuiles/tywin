@@ -1,6 +1,7 @@
 $: << "."
 require 'pamela'
 require 'usd2cop'
+
 Pamela.load :test, :console
 
 desc "This task is called by the Heroku cron add-on"
