@@ -1,2 +1,2 @@
 require './usd2cop'
-run USD2COP
+run Sinatra::Application
