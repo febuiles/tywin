@@ -29,7 +29,7 @@ module Helpers
   def update_twitter_account
     setup_twitter
     client = Twitter::Client.new
-    client.update("Today's value is: $#{parse_value(fetch_data)}")
+    client.update("Today's exchange rate is: $#{parse_value(fetch_data)}")
   end
 end
 
