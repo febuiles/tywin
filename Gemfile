@@ -4,6 +4,7 @@ gem "sinatra"
 gem "rest-client"
 gem "pamela"
 gem "twitter"
+gem "json"
 
 group :test do
   gem "rack-test"

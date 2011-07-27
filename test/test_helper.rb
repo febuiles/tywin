@@ -14,8 +14,8 @@ class MiniTest::Unit::TestCase
     Sinatra::Application
   end
 
-  def mock_alpha
-    RestClient.expects(:get).returns("$1827.32 (Colombian pesos) (at current quoted rate)")
+  def mock_google
+    RestClient.expects(:get).returns('{lhs: "1 U.S. dollar",rhs: "1757.46924 Colombian pesos",error: "",icc: true}')
   end
 
   def mock_twitter

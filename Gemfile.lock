@@ -9,6 +9,7 @@ GEM
     faraday_middleware (0.6.5)
       faraday (~> 0.6.0)
     hashie (1.0.0)
+    json (1.5.3)
     mime-types (1.16)
     mini_shoulda (0.3.0)
       minitest (~> 2.1.0)
@@ -43,6 +44,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  json
   mini_shoulda
   mini_specunit
   mocha

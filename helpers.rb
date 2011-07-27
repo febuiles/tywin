@@ -1,16 +1,18 @@
+# -*- coding: utf-8 -*-
+require 'json'
 module Helpers
   def fetch_data
     RestClient.get(url)
   end
 
   def parse_value(value)
-    $1 if value =~ value_regexp
+    cop = eval(value)[:rhs]
+    cop.gsub(/[^0-9.]/, "").split(".").first # drop the fractional and the weird spaces
   end
 
   def url
-    api_key = ENV["WA_TOKEN"]
     query = "1usd%20to%20cop"
-    "http://api.wolframalpha.com/v2/query?input=#{query}&appid=#{api_key}"
+    "http://www.google.com/ig/calculator?hl=en&q=#{query}"
   end
 
   def value_regexp
