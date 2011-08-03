@@ -1,6 +1,6 @@
 USD2COP
 ======
-This bot uses the Wolfram Alpha API to fetch the USD->COP conversion every day and then it posts
+This bot uses the iGoogle Calculator  to fetch the USD->COP conversion every day and then it posts
 those results to Twitter ([@usd2cop](http://twitter.com/usd2cop)).
 
 Config
@@ -12,7 +12,6 @@ variables:
     export CONSUMER_SECRET=your_consumer_secret
     export OAUTH_TOKEN=your_oauth_token
     export OAUTH_SECRET=your_oauth_secret
-    export WA_TOKEN=your_wolfram_alpha_api_token
 
 Contact
 -----
