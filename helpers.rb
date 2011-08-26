@@ -33,6 +33,14 @@ module Helpers
     client = Twitter::Client.new
     client.update("Today's exchange rate is: $#{parse_value(fetch_data)}")
   end
+
+  def today
+    Time.now
+  end
 end
 
-
+class Time
+  def is_weekend?
+    [5,6].include?(wday)
+  end
+end

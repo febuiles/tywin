@@ -10,7 +10,7 @@ get "/" do
 end
 
 post "/" do
-  update_twitter_account
+  update_twitter_account unless today.is_weekend?
 end
 
 helpers Helpers
