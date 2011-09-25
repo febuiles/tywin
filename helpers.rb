@@ -1,4 +1,4 @@
-# -*- coding: utf-8 -*-
+ -*- coding: utf-8 -*-
 require 'json'
 module Helpers
   def fetch_data
@@ -41,6 +41,6 @@ end
 
 class Time
   def is_weekend?
-    [6,7].include?(wday)
+    [6,0].include?(wday)
   end
 end
