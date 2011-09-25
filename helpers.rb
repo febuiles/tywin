@@ -1,4 +1,3 @@
- -*- coding: utf-8 -*-
 require 'json'
 module Helpers
   def fetch_data
