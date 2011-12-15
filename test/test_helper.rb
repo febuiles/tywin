@@ -5,7 +5,7 @@ require "minitest/unit"
 require "minitest/spec"
 require "rack/test"
 require "mocha"
-require "usd2cop"
+require "tywin"
 
 class MiniTest::Unit::TestCase
   include Rack::Test::Methods

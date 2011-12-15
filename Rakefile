@@ -1,6 +1,6 @@
 $: << "."
 require 'pamela'
-require 'usd2cop'
+require 'tywin'
 
 Pamela.load :test, :console
 
