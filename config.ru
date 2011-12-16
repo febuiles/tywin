@@ -1,2 +1,2 @@
-require './usd2cop'
+require './tywin'
 run Sinatra::Application

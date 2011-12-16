@@ -10,7 +10,7 @@ module Helpers
   end
 
   def url
-    query = "1usd%20to%20cop"
+    query = settings.conversion.gsub(/\s/, "%20")
     "http://www.google.com/ig/calculator?hl=en&q=#{query}"
   end
 

@@ -1,7 +1,12 @@
-USD2COP
+Tywin
 ======
-This bot uses the iGoogle Calculator  to fetch the USD->COP conversion every day and then it posts
-those results to Twitter ([@usd2cop](http://twitter.com/usd2cop)).
+This bot uses the iGoogle Calculator to fetch any currency conversion every day and then it posts
+those results to Twitter.
+
+Live Examples
+-----
+* [@usd2cop](http://twitter.com/usd2cop)
+* [@cad2cop](http://twitter.com/cad2cop)
 
 Config
 -----
@@ -13,7 +18,10 @@ variables:
     export OAUTH_TOKEN=your_oauth_token
     export OAUTH_SECRET=your_oauth_secret
 
+The default conversion formula is `1 usd to cop`. You can change it inside `tywin.rb`
+
+    set :conversion, "1 cad to cop"
+
 Contact
 -----
 Fill a bug in the [Issues](http://github.com/febuiles/usd2cop/issues) section or write me at: federico@mheroin.com.
-

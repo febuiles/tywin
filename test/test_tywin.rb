@@ -2,7 +2,7 @@ $: << File.dirname(__FILE__)
 
 require "test_helper"
 
-describe "USD2COP" do
+describe "Tywin" do
   describe "WA value processing" do
     it "formats the value for output" do
       mock_google
