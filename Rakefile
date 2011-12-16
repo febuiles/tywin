@@ -9,3 +9,5 @@ task :cron do
   include Helpers
   update_twitter_account
 end
+
+task :default => :test
