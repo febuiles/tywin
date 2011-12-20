@@ -40,6 +40,6 @@ end
 
 class Time
   def is_weekend?
-    [6,0].include?(wday)
+    saturday? or sunday?
   end
 end
